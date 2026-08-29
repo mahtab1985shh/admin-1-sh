@@ -1108,7 +1108,7 @@ pageApprovals=function(){
  const list=merchantApprovalRows.filter(item=>state.approvalFilter==='all'||item.type===state.approvalFilter);
  const filters=[['all',local('همه','All')],['merchant',local('ثبت‌نام مرچنت جدید','New merchant registration')],['profile',local('ویرایش پروفایل مرچنت','Merchant profile edit')]];
  const rows=list.map(item=>{
-  const deficienciesReported=item.id==='AP-102';
+  const deficienciesReported=item.id==='AP-103';
   const statusText=deficienciesReported?local('اعلام نواقص','Deficiencies reported'):local('در انتظار بررسی','Awaiting review');
   const reviewButton=deficienciesReported
    ?`<button class="btn approval-review-button approval-review-disabled" disabled aria-disabled="true" title="${local('نواقص به مرچنت اعلام شده است.','Deficiencies have been reported to the merchant.')}">${local('بررسی','Review')}</button>`
